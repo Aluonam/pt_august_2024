@@ -5,9 +5,12 @@ const ApiCall = () => {
     const [dataApi, setdataApi] = useState()
 
     const call = async ()=>{
-        const url = await fetch(`https://jsonplaceholder.typicode.com/todos/1`);
-        const data = await url.json()
-        console.log(data)
+        try{
+            const url = await fetch(`https://jsonplaceholder.typicode.com/todos/1`);
+            const data = await url.json()
+            console.log(data)
+        } catch(err){console.log('error is detected', err)}
+        
     }
 
     useEffect(() => {
