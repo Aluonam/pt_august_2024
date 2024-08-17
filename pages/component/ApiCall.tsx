@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import ModalData from './ModalData'
 
 const ApiCall = () => {
 
@@ -18,7 +19,7 @@ const ApiCall = () => {
     }
     
   return (
-    <div>ApiCall</div>
+    <ModalData></ModalData>
   )
 }
 
