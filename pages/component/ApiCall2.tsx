@@ -1,9 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import ModalData2 from './ModalData2'
 
+export interface dataPropsType {
+    id: number;
+    titel: string;
+    completed: boolean;
+}
+
 const ApiCall2 = () => {
 
-    const [data, setData] = useState()
+    const [data, setData] = useState<dataPropsType>()
 
     const call = async () => {
         try{
@@ -20,7 +26,7 @@ const ApiCall2 = () => {
     
   return (
     <div>
-        <ModalData2></ModalData2>
+        <ModalData2 data={data}></ModalData2>
     </div>
   )
 }

@@ -16,7 +16,17 @@ const style = {
   p: 4,
 };
 
-export default function ModalData2() {
+export interface dataPropsType {
+    id: number;
+    titel: string;
+    completed: boolean;
+}
+
+interface ModalProps {
+    data?:dataPropsType
+} 
+
+export default function ModalData2({data}:ModalProps) {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
