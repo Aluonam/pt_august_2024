@@ -1,7 +1,8 @@
 import Head from "next/head";
 import styles from "@/styles/Home.module.css";
-import ApiCall from "./component/ApiCall";
-import ApiCall2 from "./component/ApiCall2";
+import ApiCall2 from "./component/ApiCall2/ApiCall2";
+import ApiCall from "./component/ApiCall/ApiCall";
+import InputUpperCase from "./component/InputUpperCase.tsx/InputUpperCase";
 
 
 export default function Home() {
@@ -14,7 +15,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main}`}>
-        <div>
+        <div >
           <p>
             Prueba técnica consumo API
           </p>
@@ -22,10 +23,11 @@ export default function Home() {
           <ApiCall></ApiCall>
           <ApiCall2></ApiCall2>
         </div>
+        <div className={styles.card}>
+          <InputUpperCase></InputUpperCase>
         </div>
-          
-
-       
+        </div>
+        
       </main>
     </>
   );
