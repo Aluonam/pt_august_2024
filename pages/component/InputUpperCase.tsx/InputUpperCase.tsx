@@ -1,10 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const InputUpperCase = () => {
+
+  const [inputData, setInputData] = useState<string>('')
+
+  const handleUpperCase = ()=>{
+    console.log(inputData)
+  }
   return (
     <>
-    <input></input>
-    <button>Change</button>
+    <input onChange={(e)=>{setInputData(e.target.value)}}></input>
+    <button onClick={()=>{handleUpperCase()}}>Change</button>
     </>
   )
 }
