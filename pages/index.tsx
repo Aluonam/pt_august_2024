@@ -14,16 +14,16 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main}`}>
-        <div className={styles.description}>
-        <ApiCall2></ApiCall2>
+        <div>
           <p>
-            Prueba técnica
+            Prueba técnica consumo API
           </p>
-          </div>
         <div className={styles.center}>
           <ApiCall></ApiCall>
-          
+          <ApiCall2></ApiCall2>
         </div>
+        </div>
+          
 
        
       </main>
