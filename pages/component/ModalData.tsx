@@ -36,7 +36,7 @@ export default function ModalData({dataApi}:ModalDataProps){
 
   return (
     <div>
-      <Button onClick={handleOpen}>Show data</Button>
+      <Button onClick={handleOpen}>INFO 1</Button>
       <Modal
         open={open}
         onClose={handleClose}
@@ -45,7 +45,7 @@ export default function ModalData({dataApi}:ModalDataProps){
       >
         <Box sx={style}>
           <Typography id="modal-modal-title" variant="h6" component="h2">
-            Data api:
+            Los datos para el id {dataApi?.id} son:
           </Typography>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
            El id: {dataApi?.id}

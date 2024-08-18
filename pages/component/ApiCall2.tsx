@@ -3,7 +3,7 @@ import ModalData2 from './ModalData2'
 
 export interface dataPropsType {
     id: number;
-    titel: string;
+    title: string;
     completed: boolean;
 }
 

@@ -18,7 +18,7 @@ const style = {
 
 export interface dataPropsType {
     id: number;
-    titel: string;
+    title: string;
     completed: boolean;
 }
 
@@ -42,10 +42,12 @@ export default function ModalData2({data}:ModalProps) {
       >
         <Box sx={style}>
           <Typography id="modal-modal-title" variant="h6" component="h2">
-            Text in a modal
+          Los datos de para el id {data?.id} son:
           </Typography>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+          El id: {data?.id}
+          <br></br>
+          El título: {data?.title}
           </Typography>
         </Box>
       </Modal>
