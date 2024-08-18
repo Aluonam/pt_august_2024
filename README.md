@@ -7,6 +7,8 @@ API URL: https://jsonplaceholder.typicode.com/
 
 En este ejercicio se pretende reincidir en el aprendizaje de consumo API con **fetch**.
 Uso de libreria Material UI (Mui): https://mui.com/material-ui/react-modal/
+![apiData](image.png)
+![modalData](image-1.png)
 
 Tareas secundarias
 
