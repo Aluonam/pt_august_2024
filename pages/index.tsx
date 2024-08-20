@@ -3,6 +3,7 @@ import styles from "@/styles/Home.module.css";
 import ApiCall2 from "./component/ApiCall2/ApiCall2";
 import ApiCall from "./component/ApiCall/ApiCall";
 import InputUpperCase from "./component/InputUpperCase.tsx/InputUpperCase";
+import ApiCall3 from "./component/ApiCall3/ApiCall3";
 
 
 export default function Home() {
@@ -22,8 +23,9 @@ export default function Home() {
         <div className={styles.center}>
           <ApiCall></ApiCall>
           <ApiCall2></ApiCall2>
+          <ApiCall3></ApiCall3>
         </div>
-        <div className={styles.card}>
+        <div>
           <InputUpperCase></InputUpperCase>
         </div>
         </div>
