@@ -4,6 +4,9 @@ import ApiCall2 from "./component/ApiCall2/ApiCall2";
 import ApiCall from "./component/ApiCall/ApiCall";
 import InputUpperCase from "./component/InputUpperCase.tsx/InputUpperCase";
 import ApiCall3 from "./component/ApiCall3/ApiCall3";
+import { QueryClientProvider } from "@tanstack/react-query";
+import queryClient from "./api/queryClient";
+import UserList from "./component/Todos/UserList";
 
 
 export default function Home() {
@@ -27,6 +30,13 @@ export default function Home() {
         </div>
         <div>
           <InputUpperCase></InputUpperCase>
+        </div>
+        <br></br>
+        <div>
+          <QueryClientProvider client={queryClient}>
+           <h3>UserList with TanStack Query: </h3> 
+             <UserList></UserList>
+          </QueryClientProvider>
         </div>
         </div>
         
