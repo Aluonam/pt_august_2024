@@ -1,6 +1,6 @@
-Tarea principal
 
-Consume una API y muestra los datos en un modal.
+
+**Consume una API y muestra los datos en un modal.**
 
 
 API URL: https://jsonplaceholder.typicode.com/
@@ -10,9 +10,14 @@ Uso de libreria Material UI (Mui): https://mui.com/material-ui/react-modal/
 ![apiData](image.png)
 ![modalData](image-1.png)
 
-Tareas secundarias
+**Listado de usuarios usando ReactQuery TansTack.**
+
+![ListTanStack](image-2.png)
+
+
 
 Crea un input que permita escribir al usuario y al pulsar un botón pasa todo a mayúsculas el cambio se hace sobre el contenido del input.
+
 
 Crea un input que permita escribir al usuario y cuenta las vocales sacando el resultado en la pantalla a medida que escribe
 
