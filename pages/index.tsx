@@ -20,24 +20,21 @@ export default function Home() {
       </Head>
       <main className={`${styles.main}`}>
         <div >
-          <p>
-            Prueba técnica consumo API
-          </p>
-        <div className={styles.center}>
-          <ApiCall></ApiCall>
-          <ApiCall2></ApiCall2>
-          <ApiCall3></ApiCall3>
-        </div>
-        <div>
-          <InputUpperCase></InputUpperCase>
-        </div>
-        <br></br>
-        <div>
-          <QueryClientProvider client={queryClient}>
-           <h3>UserList with TanStack Query: </h3> 
-             <UserList></UserList>
-          </QueryClientProvider>
-        </div>
+          <div className={styles.center}>
+            <ApiCall></ApiCall>
+            <ApiCall2></ApiCall2>
+            <ApiCall3></ApiCall3>
+          </div>
+          <div>
+            <InputUpperCase></InputUpperCase>
+          </div>
+          <br></br>
+          <div>
+            <QueryClientProvider client={queryClient}>
+            <h3>UserList with TanStack Query: </h3> 
+              <UserList></UserList>
+            </QueryClientProvider>
+          </div>
         </div>
         
       </main>

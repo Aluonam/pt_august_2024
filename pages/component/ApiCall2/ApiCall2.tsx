@@ -15,7 +15,6 @@ const ApiCall2 = () => {
         try{
             const url = await fetch(`https://jsonplaceholder.typicode.com/todos/2`)
             const data = await url.json()
-            console.log(data)
             setData(data)
         }catch(err){console.log('errr detected', err)}
     }
