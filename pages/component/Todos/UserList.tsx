@@ -1,6 +1,6 @@
 import React from 'react';
 import { useQuery } from '@tanstack/react-query';
-import { fetchUsers, UsersPropsType } from '../../api/usersList';
+import { fetchUsers, UsersPropsType } from '../../api/UsersList';
 
 const UserList = () => {
   const { isLoading, isError, data, error } = useQuery({

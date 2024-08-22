@@ -7,6 +7,7 @@ import ApiCall3 from "./component/ApiCall3/ApiCall3";
 import { QueryClientProvider } from "@tanstack/react-query";
 import queryClient from "./api/queryClient";
 import UserList from "./component/Todos/UserList";
+import VocalCounter from "./component/VocalCounter/VocalCounter";
 
 
 export default function Home() {
@@ -27,6 +28,8 @@ export default function Home() {
           </div>
           <div>
             <InputUpperCase></InputUpperCase>
+            <br></br>
+            <VocalCounter></VocalCounter>
           </div>
           <br></br>
           <div>

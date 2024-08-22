@@ -72,28 +72,9 @@
   max-width: 30ch;
 }
 
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  padding: 4rem 0;
-}
 
-.center::before {
-  background: var(--secondary-glow);
-  border-radius: 50%;
-  width: 480px;
-  height: 360px;
-  margin-left: -400px;
-}
 
-.center::after {
-  background: var(--primary-glow);
-  width: 240px;
-  height: 180px;
-  z-index: -1;
-}
+
 
 .center::before,
 .center::after {
@@ -146,14 +127,8 @@
     margin-bottom: 0.5rem;
   }
 
-  .center {
-    padding: 8rem 0 6rem;
-  }
 
-  .center::before {
-    transform: none;
-    height: 300px;
-  }
+
 
   .description {
     font-size: 0.8rem;
