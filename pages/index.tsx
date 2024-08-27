@@ -8,6 +8,7 @@ import { QueryClientProvider } from "@tanstack/react-query";
 import queryClient from "./api/queryClient";
 import UserList from "./component/Todos/UserList";
 import VocalCounter from "./component/VocalCounter/VocalCounter";
+import ExArrMethods from './component/ArrMethods/ExArrMethods';
 
 
 export default function Home() {
@@ -25,6 +26,9 @@ export default function Home() {
             <ApiCall></ApiCall>
             <ApiCall2></ApiCall2>
             <ApiCall3></ApiCall3>
+          </div>
+          <div>
+            <ExArrMethods></ExArrMethods>
           </div>
           <div>
             <InputUpperCase></InputUpperCase>
